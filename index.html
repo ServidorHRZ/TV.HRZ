@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV HRZ</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('Fondo_Menu.png'); /* Imagen de fondo */
+            background-size: cover;
+            background-position: center top; /* Centrado arriba */
+            background-attachment: fixed;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1800px; /* Ancho máximo para limitar el tamaño en pantallas grandes */
+            box-sizing: border-box;
+            margin: auto; /* Centrar el contenedor verticalmente */
+        }
+        .image-link {
+            display: block;
+            max-width: 300px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .image-link img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .image-link img:hover {
+            transform: scale(1.05);
+        }
+        /* Estilo adicional para dispositivos móviles */
+        @media (max-width: 599px) {
+            .container {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px 10px; /* Ajuste del padding para móviles */
+            }
+            .image-link {
+                max-width: 90%;
+            }
+        }
+        @media (min-width: 600px) and (max-width: 1024px) {
+            .container {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .image-link {
+                max-width: 45%;
+            }
+        }
+        @media (min-width: 1025px) {
+            .container {
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+            }
+            .image-link {
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="TV.html" class="image-link"><img src="IMG/TV.png" alt="TV"></a>
+        <a href="Peliculas.html" class="image-link"><img src="IMG/PELICULAS.png" alt="Películas"></a>
+        <a href="Series.html" class="image-link"><img src="IMG/SERIES.png" alt="Series"></a>
+    </div>
+</body>
+</html>

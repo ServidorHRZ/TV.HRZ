@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="Series.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('Fondo_Menu.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            max-width: 1800px; /* Ajusta el ancho máximo según tu preferencia */
+        }
+        
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .image-container a {
+            display: block;
+            transition: transform 0.3s;
+        }
+        
+        .image-container a:hover {
+            transform: scale(1.1);
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <a href="TV/caracol.html">
+                <img src="/IMG/Caracol TV.jpg"alt="Imagen 1">
+            </a>
+            <a href="index.html">
+                <img src="IMG/INICIO.jpg" alt="Imagen 2">
+            </a>
+            <!-- Añade más imágenes y enlaces según sea necesario -->
+        </div>
+    </div>
+</body>
+</html>

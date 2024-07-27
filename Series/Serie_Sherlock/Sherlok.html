@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherlock</title>
+    <link rel="stylesheet" href="Sherlock.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSeason(1)">Temporada 1</a></li>
+                <li><a href="#" onclick="showSeason(2)">Temporada 2</a></li>
+                <li><a href="#" onclick="showSeason(3)">Temporada 3</a></li>
+                <li><a href="#" onclick="showSeason(4)">Temporada 4</a></li>
+                <li><a href="#" onclick="window.history.back()">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="season-1" class="season">
+            <div class="episode">
+                <h2>Un estudio en rosa</h2>
+                <iframe src="https://drive.google.com/file/d/1YU2-NU3Idv9WUaxlWP9PJsMtmG_lDyI7/preview" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="episode">
+                <h2>El banquero ciego</h2>
+                <iframe src="https://drive.google.com/file/d/19MPlaSmyNl2TH6iJLPwc6FNOlb1Kh7lN/preview" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="episode">
+                <h2>El gran juego</h2>
+                <iframe src="https://drive.google.com/file/d/1rsj8Qztc1ZN-o_NycfA-Lzymw-ODHhr4/preview" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="season-2" class="season" style="display:none;">
+            <div class="episode">
+                <h2>Un escándalo en Belgravia</h2>
+                <iframe src="https://drive.google.com/file/d/1TuZ9l4UGuYKP6-c1E5DzWBOMi-ZGSS3m/preview" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="episode">
+                <h2>Los sabuesos de Baskerville</h2>
+                <iframe src="https://drive.google.com/file/d/1MpHA887D9SFWYod1LQZmezoECmlWezKm/preview" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="episode">
+                <h2>La caída de Reichenbach</h2>
+                <iframe src="https://drive.google.com/file/d/100ExIswYOgA_tZrxAve3RLIesdRRJrti/preview" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="season-3" class="season" style="display:none;">
+            <div class="episode">
+                <h2>La venganza de los Belgravia</h2>
+                <iframe src="https://drive.google.com/file/d/1Lq8qLKg_W8-Wyp0cdj8Taor4HJCGmMMI/preview" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="episode">
+                <h2>El signo de tres</h2>
+                <iframe src="https://drive.google.com/file/d/1yKrW-oM6RTcuQk1xQdhu1jZSQkxNvIzs/preview" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="episode">
+                <h2>Su último voto</h2>
+                <iframe src="https://drive.google.com/file/d/1k0XFaFYyAxehDQ0A1N687DO2M8rOz57E/preview" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="season-4" class="season" style="display:none;">
+            <div class="episode">
+                <h2>Los seis Thatchers</h2>
+                <iframe src="https://drive.google.com/file/d/1CaCmdCGI0jloPYrgXSNeAEVhUDRaR4i1/preview" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="episode">
+                <h2>El detective mentiroso</h2>
+                <iframe src="https://drive.google.com/file/d/14zCnGhwFzX1AahQDXRgDAabzJiU3uP4Q/preview" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="episode">
+                <h2>El problema final</h2>
+                <iframe src="https://drive.google.com/file/d/1UYrkk3iDSUyTIXLVGop29v3vMBaC22oE/preview" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function showSeason(seasonNumber) {
+            const seasons = document.querySelectorAll('.season');
+            seasons.forEach(season => season.style.display = 'none');
+            document.getElementById(`season-${seasonNumber}`).style.display = 'grid';
+        }
+    </script>
+</body>
+</html>
