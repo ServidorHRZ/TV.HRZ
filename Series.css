@@ -9,6 +9,7 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: Arial, sans-serif;
+    font-size: 24px; /* Aumenta el tamaño de la fuente para mejor legibilidad en TV */
 }
 
 .container {
@@ -24,8 +25,9 @@ body {
 
 .image-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajusta el tamaño mínimo de las imágenes */
+    gap: 30px; /* Aumenta el espacio entre las imágenes */
+    padding: 20px; /* Añade padding para separar del borde de la pantalla */
 }
 
 .image-container a {
@@ -43,3 +45,4 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
