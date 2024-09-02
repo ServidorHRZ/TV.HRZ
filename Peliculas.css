@@ -35,6 +35,8 @@ body {
 
 .image-container a:hover {
     transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+    border-radius: 10px;
 }
 
 .image-container img {
