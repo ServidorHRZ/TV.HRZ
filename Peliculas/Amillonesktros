@@ -61,7 +61,7 @@
 </head>
 <body>
     <div class="video-container">
-        <iframe src="https://drive.google.com/file/d/1VKYgBWnk2tND991LpT0WzZz9Md21d7DF/preview" allowfullscreen>PROXIMAMENTE</iframe>
+        <iframe src="https://drive.google.com/file/d/1Z1opAHkfO6v7oNYha7QnbHU_7jqRDJxR/preview" allowfullscreen>PROXIMAMENTE</iframe>
     </div>
     <div class="button-container">
         <button onclick="window.history.back()">Regresar</button>
