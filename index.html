@@ -23,7 +23,7 @@
         }
         .container {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             gap: 20px;
@@ -34,9 +34,11 @@
             margin: auto; /* Centrar el contenedor verticalmente */
         }
         .image-link {
-            display: block;
+            flex: 1 1 300px;
             max-width: 300px;
-            width: 100%;
+            min-width: 200px;
+            margin: 10px;
+            display: block;
             border-radius: 20px;
             cursor: pointer;
             box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Sombra para el efecto de iluminación */
@@ -55,32 +57,22 @@
         /* Estilo adicional para dispositivos móviles */
         @media (max-width: 599px) {
             .container {
-                flex-direction: column;
-                gap: 15px;
-                padding: 20px 10px; /* Ajuste del padding para móviles */
+                padding: 10px;
             }
             .image-link {
-                max-width: 90%;
+                flex: 1 1 100%;
+                max-width: 100%;
             }
         }
         @media (min-width: 600px) and (max-width: 1024px) {
-            .container {
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-around;
-            }
             .image-link {
+                flex: 1 1 45%;
                 max-width: 45%;
             }
         }
         @media (min-width: 1025px) {
-            .container {
-                flex-direction: row;
-                justify-content: center;
-                gap: 20px;
-            }
             .image-link {
-                max-width: 300px;
+                flex: 0 1 300px;
             }
         }
     </style>
