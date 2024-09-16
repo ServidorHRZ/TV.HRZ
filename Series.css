@@ -24,7 +24,7 @@ body {
 
 .image-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas para PC y laptops */
     gap: 20px;
     width: 100%;
 }
@@ -47,9 +47,15 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+@media only screen and (max-width: 1024px) {
+    .image-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas para tablets */
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .image-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas para teléfonos grandes */
     }
 }
 
@@ -59,6 +65,7 @@ body {
     }
     
     .image-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas para teléfonos pequeños */
         gap: 10px;
     }
 }
